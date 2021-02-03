@@ -22,3 +22,8 @@ def policy_eval_lin(pi):
     # Compute V
     I = np.eye(env.observation_space.n)
     return np.dot(np.linalg.inv(I - gamma*P_pi), r_pi)
+
+pi0 = fl.RIGHT*np.ones((env.observation_space.n))
+
+V_pi0 = policy_eval_lin(pi0)
+print(V_pi0)
