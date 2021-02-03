@@ -12,6 +12,8 @@ This class covers an introduction to Reinforcement Learning (RL) in 18 hours, ov
 
 The class is split into a series of notebooks that serve as lecture material, textbook and exercice book.
 
+Open the notebooks in Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SupaeroDataScience/reinforcement-learning/HEAD)
+
 ## Additional resources
 
 Great books available online:  
