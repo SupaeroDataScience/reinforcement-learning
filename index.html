@@ -14,7 +14,7 @@
         <link rel="canonical" href="https://supaerodatascience.github.io/reinforcement-learning/index.html">
       
       <link rel="shortcut icon" href="https://raw.githubusercontent.com/SupaeroDataScience/reinforcement-learning/master/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.7">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.3b61ea93.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.cb6bc1d0.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.39b8e14a.min.css">
@@ -198,27 +198,28 @@
       
       
 
-
   
-
-
-  <li class="md-nav__item md-nav__item--active">
+  
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
       
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="index.html" class="md-nav__link md-nav__link--active">
         Overview
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="index.html" class="md-nav__link md-nav__link--active">
-      Overview
-    </a>
-    
+      </a>
       
+        
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -232,6 +233,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#syllabus" class="md-nav__link">
+    Syllabus
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-material" class="md-nav__link">
+    Class material
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#class-schedule" class="md-nav__link">
     Class schedule
   </a>
@@ -241,8 +256,54 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
     
-  </li>
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="intro.html" class="md-nav__link">
+        Introduction to RL
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MDP.html" class="md-nav__link">
+        Markov Decision Processes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DP.html" class="md-nav__link">
+        Solving MDPs
+      </a>
+    </li>
+  
 
     
   </ul>
@@ -270,6 +331,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#syllabus" class="md-nav__link">
+    Syllabus
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-material" class="md-nav__link">
+    Class material
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#class-schedule" class="md-nav__link">
     Class schedule
   </a>
@@ -294,6 +369,15 @@
                 
                 
                 <h1 id="reinforcement-learning">Reinforcement Learning<a class="headerlink" href="#reinforcement-learning" title="Permanent link">🔗</a></h1>
+<p>Reinforcement Learning section of the Algorithms in Machine Learning class at ISAE-Supaero</p>
+<ul>
+<li><a href="https://supaerodatascience.github.io/reinforcement-learning/">Home</a></li>
+<li><a href="https://github.com/SupaeroDataScience/reinforcement-learning/">Github repository</a></li>
+</ul>
+<h2 id="syllabus">Syllabus<a class="headerlink" href="#syllabus" title="Permanent link">🔗</a></h2>
+<p>This class covers an introduction to Reinforcement Learning (RL) in 18 hours, over 6 sessions. It aims to provide both a solid theoretical foundation and a quick learning curve towards current Deep RL algorithms. It starts with the fundamental notions underlying RL: Markov Decision Processes, model-based resolution approaches including Dynamic Programming, sample-based resolution of the Bellman equation. This leads to the identification of the three bottomline challenges in RL: function approximation, the exploration/exploitation trade-off and the search for optimality. This provides perspective to the following classes that introduce methods designed to tackle these challenges, including Deep RL methods. By the end of the class, students should be able to understand the literature on RL, implement key algorithms, and anticipate the difficulties of applying RL to various problems.</p>
+<h2 id="class-material">Class material<a class="headerlink" href="#class-material" title="Permanent link">🔗</a></h2>
+<p>The class is split into a series of notebooks that serve as lecture material, textbook and exercice book.</p>
 <h2 id="class-schedule">Class schedule<a class="headerlink" href="#class-schedule" title="Permanent link">🔗</a></h2>
 <table>
 <thead>
@@ -306,40 +390,40 @@
 </thead>
 <tbody>
 <tr>
-<td>MDP</td>
+<td>MDPs and their resolution</td>
 <td>08h30 - 11h45</td>
 <td>03/02/2021</td>
-<td></td>
+<td>RL intuitions, Markov Decision Processes, Dynamic Programming</td>
 </tr>
 <tr>
-<td>VF</td>
+<td>Sample-based policy search</td>
 <td>08h30 - 11h45</td>
 <td>09/02/2021</td>
-<td></td>
+<td>Formulations of RL algorithms, Temporal Differences, Q-learning, the 3 bottlenecks of RL</td>
 </tr>
 <tr>
-<td>RL</td>
+<td>Value function approximation</td>
 <td>13h00 - 16h15</td>
 <td>09/02/2021</td>
-<td></td>
+<td>Linear approximations, Deep Q-Networks</td>
 </tr>
 <tr>
-<td>DQN</td>
+<td>Policy gradients</td>
 <td>09h00 - 12h15</td>
 <td>15/02/2021</td>
-<td></td>
-</tr>
-<tr>
-<td>PG</td>
-<td>09h00 - 12h15</td>
-<td>17/02/2021</td>
-<td></td>
+<td>PG and Deep PG methods</td>
 </tr>
 <tr>
 <td>MCTS</td>
+<td>09h00 - 12h15</td>
+<td>17/02/2021</td>
+<td>Monte Carlo Tree Search</td>
+</tr>
+<tr>
+<td>open</td>
 <td>13h45 - 17h00</td>
 <td>17/02/2021</td>
-<td></td>
+<td>open session on an RL challenge</td>
 </tr>
 </tbody>
 </table>
@@ -358,6 +442,27 @@
         
 <footer class="md-footer">
   
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+        
+          <a href="intro.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Introduction to RL
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
@@ -374,15 +479,15 @@
       
     </div>
     
-      <script src="assets/javascripts/vendor.08c56446.min.js"></script>
-      <script src="assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="assets/javascripts/vendor.53cc9318.min.js"></script>
+      <script src="assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: ".",
           features: ['toc.autohide', 'navigation.sections'],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.8c7e0a7e.min.js"
+            worker: "assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
