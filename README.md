@@ -12,6 +12,15 @@ This class covers an introduction to Reinforcement Learning (RL) in 18 hours, ov
 
 The class is split into a series of notebooks that serve as lecture material, textbook and exercice book.
 
+## Additional resources
+
+Great books available online:  
+[Reinforcement Learning, an introduction](http://incompleteideas.net/book/the-book.html)  
+[Algorithms for Reinforcement Learning](https://sites.ualberta.ca/~szepesva/RLBook.html)  
+[An introduction to Deep Reinforcement Learning](https://arxiv.org/abs/1811.12560)
+
+[FAQ on installing Gym for Mac users](#)
+
 ## Class schedule
 
 Schedule | | | |
