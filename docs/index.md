@@ -21,7 +21,7 @@ Great books available online:
 [Algorithms for Reinforcement Learning](https://sites.ualberta.ca/~szepesva/RLBook.html)  
 [An introduction to Deep Reinforcement Learning](https://arxiv.org/abs/1811.12560)
 
-[FAQ on installing Gym for Mac users](#)
+[FAQ on installing Gym for Mac users](https://github.com/SupaeroDataScience/reinforcement-learning/blob/master/notebooks/extras/Install_RLclass_MacOS.md)
 
 ## Class schedule
 
