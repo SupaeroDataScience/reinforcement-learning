@@ -9,10 +9,10 @@ dependencies:
   - python-graphviz
   - scikit-learn
   - scikit-image
+  - pytorch
   - pip
-  - pip:
-    - gym
-    - gym[atari]
-    - gym[box2d]
-    - gym[algorithms]
-    - gym[classic_control]
+  - pyvirtualdisplay
+  - gym
+  - gym-atari
+  - gym-box2d
+  - gym-classic_control
