@@ -11,14 +11,14 @@
       
       
       
-        <link rel="canonical" href="https://supaerodatascience.github.io/reinforcement-learning/DP.html">
+        <link rel="canonical" href="https://supaerodatascience.github.io/reinforcement-learning/RL3-eval.html">
       
       <link rel="shortcut icon" href="https://raw.githubusercontent.com/SupaeroDataScience/reinforcement-learning/master/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.7">
     
     
       
-        <title>Solving MDPs - Reinforcement Learning</title>
+        <title>Evaluating policies - Reinforcement Learning</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#markov-decision-processes" class="md-skip">
+        <a href="#evaluating-policies-with-samples" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Solving MDPs
+              Evaluating policies
             
           </span>
         </div>
@@ -217,7 +217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="intro.html" class="md-nav__link">
+      <a href="RL0-intro.html" class="md-nav__link">
         Introduction to RL
       </a>
     </li>
@@ -232,8 +232,23 @@
   
   
     <li class="md-nav__item">
-      <a href="MDP.html" class="md-nav__link">
+      <a href="RL1-MDP.html" class="md-nav__link">
         Markov Decision Processes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RL2-DP.html" class="md-nav__link">
+        Solving MDPs
       </a>
     </li>
   
@@ -255,10 +270,25 @@
         
       
       
-      <a href="DP.html" class="md-nav__link md-nav__link--active">
-        Solving MDPs
+      <a href="RL3-eval.html" class="md-nav__link md-nav__link--active">
+        Evaluating policies
       </a>
       
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RL4-control.html" class="md-nav__link">
+        Model-free control
+      </a>
     </li>
   
 
@@ -291,18 +321,18 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/SupaeroDataScience/reinforcement-learning/edit/master/docs/DP.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/SupaeroDataScience/reinforcement-learning/edit/master/docs/RL3-eval.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="markov-decision-processes">Markov Decision Processes<a class="headerlink" href="#markov-decision-processes" title="Permanent link">🔗</a></h1>
+                <h1 id="evaluating-policies-with-samples">Evaluating policies with samples<a class="headerlink" href="#evaluating-policies-with-samples" title="Permanent link">🔗</a></h1>
 <ul>
 <li><a href="https://supaerodatascience.github.io/reinforcement-learning/">Home</a></li>
 <li><a href="https://github.com/SupaeroDataScience/reinforcement-learning/">Github repository</a></li>
 </ul>
-<p>This class covers the model-based resolution of MDPs, in particular via Dynamic Programming.</p>
-<p><a href="https://github.com/SupaeroDataScience/reinforcement-learning/blob/master/notebooks/RL2%20-%20Model-based%20policy%20optimization.ipynb">Notebook</a></p>
+<p>The previous classes introduced MDPs and the Bellman equations (evaluation and optimality). These equations involve the MDP's model (transition and reward functions). We saw how to solve these equations using the model. In this class, we will investigate how one can aim to solve the evaluation equation with samples rather than with the model.</p>
+<p><a href="https://github.com/SupaeroDataScience/reinforcement-learning/blob/master/notebooks/RL3%20-%20Evaluating%20policies%20with%20samples.ipynb">Notebook</a></p>
                 
               
               
@@ -321,7 +351,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="MDP.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="RL2-DP.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -330,11 +360,25 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Markov Decision Processes
+                Solving MDPs
               </div>
             </div>
           </a>
         
+        
+          <a href="RL4-control.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Model-free control
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
         
       </nav>
     </div>
