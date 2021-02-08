@@ -6,6 +6,8 @@ import gym.envs.toy_text.frozen_lake as fl
 import numpy as np
 
 env = gym.make('FrozenLake-v0')
+gamma = 0.9
+pi0 = fl.RIGHT*np.ones((env.observation_space.n))
 
 def policy_eval_iter(pi, max_iter):
     V = np.zeros((env.observation_space.n))

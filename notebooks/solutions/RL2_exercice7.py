@@ -8,6 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 env = gym.make('FrozenLake-v0')
+gamma = 0.9
 
 def vf_optim(V, epsilon, max_iter):
     W = np.copy(V)

@@ -8,6 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 env = gym.make('FrozenLake-v0')
+gamma = 0.9
 
 def policy_eval_iter_mat2(pi, epsilon, max_iter):
     # build r and P

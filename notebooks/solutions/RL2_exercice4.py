@@ -6,6 +6,7 @@ import gym.envs.toy_text.frozen_lake as fl
 import numpy as np
 
 env = gym.make('FrozenLake-v0')
+gamma = 0.9
 
 def policy_eval_lin(pi):
     # build r and P
