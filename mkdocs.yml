@@ -22,9 +22,11 @@ repo_url: https://github.com/SupaeroDataScience/reinforcement-learning
 # TODO: fill this out
 nav:
 - Overview: index.md
-- Introduction to RL: intro.md
-- Markov Decision Processes: MDP.md
-- Solving MDPs: DP.md
+- Introduction to RL: RL0-intro.md
+- Markov Decision Processes: RL1-MDP.md
+- Solving MDPs: RL2-DP.md
+- Evaluating policies: RL3-eval.md
+- Model-free control: RL4-control.md
 
 markdown_extensions:
 - markdown.extensions.codehilite:
