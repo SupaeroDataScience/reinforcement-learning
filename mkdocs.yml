@@ -27,6 +27,7 @@ nav:
 - Solving MDPs: RL2-DP.md
 - Evaluating policies: RL3-eval.md
 - Model-free control: RL4-control.md
+- Deep Q-Networks: RL5-DQN.md
 
 markdown_extensions:
 - markdown.extensions.codehilite:
