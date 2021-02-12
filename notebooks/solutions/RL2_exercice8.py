@@ -52,6 +52,7 @@ def greedyQpolicy(Q):
     return pi
 
 def print_policy(pi):
+    actions = {fl.LEFT: '\u2190', fl.DOWN: '\u2193', fl.RIGHT: '\u2192', fl.UP: '\u2191'}
     for row in range(env.unwrapped.nrow):
         for col in range(env.unwrapped.ncol):
             print(actions[pi[to_s(row,col)]], end='')
