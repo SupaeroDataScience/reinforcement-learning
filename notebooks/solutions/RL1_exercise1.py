@@ -5,7 +5,7 @@ import gym
 import gym.envs.toy_text.frozen_lake as fl
 import numpy as np
 
-env = gym.make('FrozenLake-v0')
+env = gym.make('FrozenLake-v1')
 
 nb_episodes = 100000
 horizon = 200
@@ -14,7 +14,7 @@ Vepisode = np.zeros(nb_episodes)
 for i in range(nb_episodes):
     env.reset()
     for t in range(horizon):
-        next_state, r, done,_ = env.step(fl.RIGHT)
+        next_state, r, done, _, _ = env.step(fl.RIGHT)
         Vepisode[i] += gamma**t * r
         if done:
             break
