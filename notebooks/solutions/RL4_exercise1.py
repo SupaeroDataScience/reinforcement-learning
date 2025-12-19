@@ -1,16 +1,16 @@
 ### WRITE YOUR CODE HERE
 # If you get stuck, uncomment the line above to load a correction in this cell (then you can execute this code).
 
-import gym
-import gym.envs.toy_text.frozen_lake as fl
+import gymnasium as gym
+import gymnasium.envs.toy_text.frozen_lake as fl
 import numpy as np
 %matplotlib inline
 import matplotlib.pyplot as plt
 
-env = gym.make('FrozenLake-v0')
+env = gym.make('FrozenLake-v1')
 
 def greedyQpolicy(Q):
-    pi = np.zeros((env.observation_space.n),dtype=np.int)
+    pi = np.zeros(env.observation_space.n,dtype=int)
     for s in range(env.observation_space.n):
         pi[s] = np.argmax(Q[s,:])
     return pi
@@ -28,10 +28,10 @@ def print_policy(pi):
 
 def value_iteration(V,epsilon,max_iter):
     W = np.copy(V)
-    residuals = np.zeros((max_iter))
+    residuals = np.zeros(max_iter)
     for i in range(max_iter):
         for s in range(env.observation_space.n):
-            Q = np.zeros((env.action_space.n))
+            Q = np.zeros(env.action_space.n)
             for a in range(env.action_space.n):
                 outcomes = env.unwrapped.P[s][a]
                 for o in outcomes:
@@ -63,7 +63,7 @@ def Q_from_V(V):
 
 def policy_eval_iter_mat(pi, max_iter):
     # build r and P
-    r_pi = np.zeros((env.observation_space.n))
+    r_pi = np.zeros(env.observation_space.n)
     P_pi = np.zeros((env.observation_space.n, env.observation_space.n))
     for x in range(env.observation_space.n):
         outcomes = env.unwrapped.P[x][pi[x]]
@@ -74,7 +74,7 @@ def policy_eval_iter_mat(pi, max_iter):
             P_pi[x,y] += p
             r_pi[x] += r*p
     # Compute V
-    V = np.zeros((env.observation_space.n))
+    V = np.zeros(env.observation_space.n)
     for i in range(max_iter):
         V = r_pi + gamma * np.dot(P_pi, V)
     return V
@@ -88,7 +88,7 @@ update_period=1000
 optimality_gap = []
 
 # Model-based optimisation
-Vinit = np.zeros((env.observation_space.n))
+Vinit = np.zeros(env.observation_space.n)
 Vstar,residuals = value_iteration(Vinit,1e-4,1000)
 Qstar = Q_from_V(Vstar)
 

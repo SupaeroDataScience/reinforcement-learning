@@ -1,20 +1,21 @@
 ### WRITE YOUR CODE HERE
 # If you get stuck, uncomment the line above to load a correction in this cell (then you can execute this code).
 
-import gym
-import gym.envs.toy_text.frozen_lake as fl
-import numpy as np
+import gymnasium as gym
+import gymnasium.envs.toy_text.frozen_lake as fl
+
 %matplotlib inline
 import matplotlib.pyplot as plt
+import numpy as np
 
-env = gym.make('FrozenLake-v0')
+env = gym.make("FrozenLake-v1", render_mode="ansi")
 
 # Policy definition and parameters
-pi0 = fl.RIGHT*np.ones((env.observation_space.n),dtype=np.int)
+pi0 = fl.RIGHT * np.ones((env.observation_space.n), dtype=int)
 gamma = 0.9
 alpha = 0.001
 
-Qtrue, residuals = policy_Qeval_iter(pi0,1e-4,10000)
+Qtrue, residuals = policy_Qeval_iter(pi0, 1e-4, 10000)
 print("Qtrue:\n", Qtrue)
 print("number of iterations:", residuals.size)
 plt.plot(residuals)
@@ -25,23 +26,23 @@ plt.semilogy(residuals)
 # parameters
 gamma = 0.9
 alpha = 0.001
-max_steps=2000000
-Q = np.transpose(np.tile(V, (4,1)))
+max_steps = 2000000
+Q = np.transpose(np.tile(V, (4, 1)))
 
-error = np.zeros((max_steps))
-x = env.reset()
+error = np.zeros(max_steps)
+s = env.reset()
 for t in range(max_steps):
     a = np.random.randint(4)
-    y,r,d,_ = env.step(a)
-    Q[x][a] = Q[x][a] + alpha * (r+gamma*Q[y][fl.RIGHT]-Q[x][a])
-    error[t] = np.max(np.abs(Q-Qtrue))
-    if d==True:
-        x = env.reset()
+    s2, r, d, _ = env.step(a)
+    Q[s][a] = Q[s][a] + alpha * (r + gamma * Q[s2][fl.RIGHT] - Q[s][a])
+    error[t] = np.max(np.abs(Q - Qtrue))
+    if d:
+        s = env.reset()
     else:
-        x=y
+        s = s2
 
-print("Max error:", np.max(np.abs(Q-Qtrue)))
+print("Max error:", np.max(np.abs(Q - Qtrue)))
 plt.figure()
 plt.plot(error)
 plt.figure()
-plt.semilogy(error);
+plt.semilogy(error)

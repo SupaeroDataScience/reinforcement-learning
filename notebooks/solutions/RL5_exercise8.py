@@ -5,7 +5,7 @@
 
 import torch
 import torch.nn as nn
-import gym
+import gymnasium as gym
 
 cartpole = gym.make('CartPole-v1')
 
