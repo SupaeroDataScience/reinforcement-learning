@@ -1,0 +1,7 @@
+gymnasium
+gymnasium[atari]
+gymnasium[box2d]
+gymnasium[classic_control]
+matplotlib
+numpy
+tqdm
