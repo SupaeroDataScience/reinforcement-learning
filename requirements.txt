@@ -2,6 +2,8 @@ gymnasium
 gymnasium[atari]
 gymnasium[box2d]
 gymnasium[classic_control]
+gymnasium[other]
 matplotlib
 numpy
+torch
 tqdm
