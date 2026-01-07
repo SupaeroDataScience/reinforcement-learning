@@ -30,14 +30,14 @@ max_steps = 2000000
 Q = np.transpose(np.tile(V, (4, 1)))
 
 error = np.zeros(max_steps)
-s = env.reset()
+s, _ = env.reset()
 for t in range(max_steps):
     a = np.random.randint(4)
-    s2, r, d, _ = env.step(a)
+    s2, r, d, _, _ = env.step(a)
     Q[s][a] = Q[s][a] + alpha * (r + gamma * Q[s2][fl.RIGHT] - Q[s][a])
     error[t] = np.max(np.abs(Q - Qtrue))
     if d:
-        s = env.reset()
+        s, _ = env.reset()
     else:
         s = s2
 

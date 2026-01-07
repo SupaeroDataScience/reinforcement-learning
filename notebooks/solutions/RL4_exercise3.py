@@ -37,7 +37,7 @@ for t in range(max_steps):
     if t%update_period==0:
         pi = greedyQpolicy(Q)
     a = np.random.randint(4)
-    y,r,d,_ = env.step(a)
+    y,r,d,_,_ = env.step(a)
     Q[x][a] = Q[x][a] + alpha * (r+gamma*Q[y][pi[y]]-Q[x][a])
     if d==True:
         x = env.reset()

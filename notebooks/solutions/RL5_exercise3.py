@@ -1,6 +1,7 @@
 ### WRITE YOUR CODE HERE
 # If you get stuck, uncomment the line above to load a correction in this cell (then you can execute this code).
 
+import numpy as np
 import random
 import torch
 
@@ -17,10 +18,8 @@ class ReplayBuffer:
         self.index = (self.index + 1) % self.capacity
 
     def sample(self, batch_size):
-        # It will be useful to have separate torch.Tensor for the each element type in the sampled minibatch.  
-        # That is one Tensor for a minibatch of states, another for actions, etc.
         batch = random.sample(self.data, batch_size)
-        return list(map(lambda x:torch.Tensor(x).to(device), list(zip(*batch))))
+        return [torch.Tensor(np.array(x)).to(device) for x in zip(*batch, strict=True)]
 
     def __len__(self):
         return len(self.data)

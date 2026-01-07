@@ -105,7 +105,7 @@ for t in range(max_steps):
         optimality_gap.append(np.max(np.abs(Qpi-Qstar)))
     # random behavior policy
     a = np.random.randint(4)
-    y,r,d,_ = env.step(a)
+    y,r,d,_,_ = env.step(a)
     # TD(0) update
     Q[x][a] = Q[x][a] + alpha * (r+gamma*Q[y][pi[y]]-Q[x][a])
     if d==True:
