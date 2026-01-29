@@ -2,6 +2,7 @@ gymnasium
 gymnasium[atari]
 gymnasium[box2d]
 gymnasium[classic_control]
+gymnasium[mujoco]
 gymnasium[other]
 matplotlib
 numpy
