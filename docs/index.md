@@ -6,7 +6,7 @@ Reinforcement Learning section of the Algorithms in Machine Learning class at IS
 
 ## Syllabus
 
-This class covers an introduction to Reinforcement Learning (RL) in 18 hours, over 6 sessions. It aims to provide both a solid theoretical foundation and a quick learning curve towards current Deep RL algorithms. It starts with the fundamental notions underlying RL: Markov Decision Processes, model-based resolution approaches including Dynamic Programming, sample-based resolution of the Bellman equation. This leads to the identification of the three bottomline challenges in RL: function approximation, the exploration/exploitation trade-off and the search for optimality. This provides perspective to the following classes that introduce methods designed to tackle these challenges, including Deep RL methods. By the end of the class, students should be able to understand the literature on RL, implement key algorithms, and anticipate the difficulties of applying RL to various problems.
+This class covers an introduction to Reinforcement Learning (RL) in 15 hours, over 5 sessions. It aims to provide both a solid theoretical foundation and a quick learning curve towards current Deep RL algorithms. It starts with the fundamental notions underlying RL: Markov Decision Processes, model-based resolution approaches including Dynamic Programming, sample-based resolution of the Bellman equation. This leads to the identification of the three bottomline challenges in RL: function approximation, the exploration/exploitation trade-off and the search for optimality. This provides perspective to the following classes that introduce methods designed to tackle these challenges, including Deep RL methods. By the end of the class, students should be able to understand the literature on RL, implement key algorithms, and anticipate the difficulties of applying RL to various problems.
 
 ## Class material
 
@@ -27,9 +27,8 @@ Great books available online:
 
 Schedule | | | |
 --- | --- | --- | ---
-MDPs and their resolution | 08h30 - 11h45 | 03/02/2021 | RL intuitions, Markov Decision Processes, Dynamic Programming |
-Sample-based policy search | 08h30 - 11h45 | 09/02/2021 | Formulations of RL algorithms, Temporal Differences, Q-learning, the 3 bottlenecks of RL |
-Value function approximation | 13h00 - 16h15 | 09/02/2021 | Linear approximations, Deep Q-Networks |
-Policy gradients | 09h00 - 12h15 | 15/02/2021 | PG and Deep PG methods|
-MCTS | 09h00 - 12h15 | 17/02/2021 | Monte Carlo Tree Search |
-open | 13h45 - 17h00 | 17/02/2021 | open session on an RL challenge |
+Introduction and MDPs | afternoon | 11/01/2027 | RL intuitions, robotics, Markov Decision Processes |
+Bellman equations and value functions | afternoon | 18/01/2027 | Bellman equations, characterizing and evaluating policies |
+Deep Q-Networks | afternoon | 25/01/2027 | value function approximation, Deep Q-Networks |
+Deep Q-Networks (lab) | afternoon | 01/02/2027 | hands-on implementation of DQN |
+Actor-Critic methods | afternoon | 08/02/2027 | policy gradients and actor-critic algorithms |
