@@ -1,4 +1,4 @@
-site_name: Reinforcement Learning
+site_name: SDD
 site_description: Introduction to reinforcement learning class, given at ISAE-Supaero
 site_url: https://supaerodatascience.github.io/reinforcement-learning/
 site_dir: site
@@ -19,15 +19,29 @@ theme:
 repo_name: SupaeroDataScience/reinforcement-learning
 repo_url: https://github.com/SupaeroDataScience/reinforcement-learning
 
-# TODO: fill this out
 nav:
-- Overview: index.md
-- Introduction to RL: RL0-intro.md
-- Markov Decision Processes: RL1-MDP.md
-- Solving MDPs: RL2-DP.md
-- Evaluating policies: RL3-eval.md
-- Model-free control: RL4-control.md
-- Deep Q-Networks: RL5-DQN.md
+- Home: https://supaerodatascience.github.io/index.html
+
+- Classes:
+  - Fundamentals of Decision Making: https://supaerodatascience.github.io/310/index.html
+  
+  - Machine Learning: 
+    - Overview: https://supaerodatascience.github.io/aml.html
+    - Machine Learning: https://supaerodatascience.github.io/machine-learning/
+    - Deep Larning: https://supaerodatascience.github.io/deep-learning/
+    - Reinforcement learning: index.md
+
+  - Data Engineering: https://supaerodatascience.github.io/DE/
+
+  - Applied Data Science: https://supaerodatascience.github.io/313/index.html
+
+  - Seminars: https://supaerodatascience.github.io/seminars.html
+
+- Resources:
+  - For current students: https://supaerodatascience.github.io/infostudents.html
+  - For prospective students: https://supaerodatascience.github.io/students.html
+  - For partners: https://supaerodatascience.github.io/partners.html
+  - Contact: https://supaerodatascience.github.io/contact.html
 
 markdown_extensions:
 - markdown.extensions.codehilite:
