@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://supaerodatascience.github.io/reinforcement-learning/index.html</loc>
-         <lastmod>2026-06-17</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://supaerodatascience.github.io/reinforcement-learning/RL0-intro.html</loc>
-         <lastmod>2026-06-17</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://supaerodatascience.github.io/reinforcement-learning/RL1-MDP.html</loc>
-         <lastmod>2026-06-17</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://supaerodatascience.github.io/reinforcement-learning/RL2-DP.html</loc>
-         <lastmod>2026-06-17</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://supaerodatascience.github.io/reinforcement-learning/RL3-eval.html</loc>
-         <lastmod>2026-06-17</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://supaerodatascience.github.io/reinforcement-learning/RL4-control.html</loc>
-         <lastmod>2026-06-17</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://supaerodatascience.github.io/reinforcement-learning/RL5-DQN.html</loc>
-         <lastmod>2026-06-17</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
 </urlset>
