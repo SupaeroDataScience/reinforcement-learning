@@ -20,11 +20,11 @@ Open the notebooks in Binder: [![Binder](https://mybinder.org/badge_logo.svg)](h
 
 Schedule | | | |
 --- | --- | --- | ---
-Introduction and MDPs | afternoon | 11/01/2027 | RL intuitions, robotics, Markov Decision Processes |
-Bellman equations and value functions | afternoon | 18/01/2027 | Bellman equations, characterizing and evaluating policies |
-Deep Q-Networks | afternoon | 25/01/2027 | value function approximation, Deep Q-Networks |
-Deep Q-Networks (lab) | afternoon | 01/02/2027 | hands-on implementation of DQN |
-Actor-Critic methods | afternoon | 08/02/2027 | policy gradients and actor-critic algorithms |
+11/01 PM| Introduction and MDPs | RL intuitions, Robotics, Markov Decision Processes |
+18/01 PM| Bellman Equations and Value Functions |  Bellman Equations, Characterizing and Evaluating Policies |
+25/01 PM| Deep Q-Networks | Value Function Approximation, Deep Q-Networks |
+01/02 PM| Deep Q-Networks (lab) |  Hands-on Implementation of DQN |
+08/02 PM| Actor-Critic methods | Policy Gradients and Actor-Critic Algorithms |
 
 
 ### Introduction to Reinforcement Learning
